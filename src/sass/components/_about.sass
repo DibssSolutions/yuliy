@@ -1,0 +1,23 @@
+.about
+  margin-top: -30px
+  // padding-bottom: 69.48%
+  height: 70vw
+  +cover
+  background-image: url(./../img/about-bg.png)
+  display: flex
+  align-items: center
+  &__content
+    width: 66.666%
+    margin-left: 33.333%
+    font-weight: 300
+    line-height: 1.75
+    color: $white
+    .blockquote,
+    & > p
+      margin-bottom: 36px
+  &__certificates
+    display: flex
+    align-items: center
+  &__certificate
+    &:not(:last-child)
+      margin-right: 12px

@@ -1,0 +1,42 @@
+.recovery
+  margin-top: -100px
+  &__descr
+    width: 75%
+    +md
+      width: 100%
+  &__subtitle
+    font-size: 30px
+    text-align: center
+  &__cta
+    text-align: center
+  &__blocks
+    margin-bottom: 4.5em
+  &__block
+    padding-top: 28px
+    &_card
+      padding-top: 0
+
+.card-danger
+  color: $white
+  padding: 28px 16px 24px 28px
+  border-radius: 10px
+  box-shadow: 4.5px 7.8px 7px 0 rgba(0, 0, 0, 0.07)
+  // background-color: #323234
+  background: repeat center / 50px 50px url('./../img/noise-dark.png')
+  &__title
+    font-family: $museo
+    font-size: 19px
+    text-transform: uppercase
+    line-height: 1.26
+    margin-bottom: 1em
+  &__list
+    +counter('', '.')
+    padding-left: 18px
+    & > li
+      position: relative
+      font-size: 13px
+      line-height: 1.62
+      &:before
+        position: absolute
+        left: -18px
+        color: $textRed

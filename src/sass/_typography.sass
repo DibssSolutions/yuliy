@@ -7,26 +7,51 @@
   line-height: 1
   letter-spacing: normal
 
+.title-big
+  font-family: $museo
+  font-size: 5em
+  line-height: 1
+  text-transform: uppercase
+  .text-row
+    &:not(:first-child)
+      margin-top: -20px
+
 .text-green
   color: $mainGreen
 
 .text-blue
   color: $blue
 
+.text-red
+  color: $textRed
+
 .text-thin
   font-weight: 100
 
+.text-light
+  font-weight: 300
+
 .text-bold
   font-weight: 700
+
+.text-black
+  font-weight: 900
+
+.text-row
+  display: block
 
 .subtitle
   font-size: 22px
   font-weight: 300
   line-height: 1.27
-  letter-spacing: normal
-  text-align: left
-  
 
-
-.\- .text-style-1
-  font-weight: bold
+.blockquote
+  font-family: $museo
+  font-size: 38px
+  font-weight: 100
+  line-height: 1
+  color: $white
+  &__author
+    margin-top: 16px
+    font-size: 20px
+    font-weight: 700

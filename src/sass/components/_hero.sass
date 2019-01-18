@@ -1,0 +1,57 @@
+.hero
+  background-image: url(./../img/hero.png)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 100% 0
+  color: $titleWhite
+  height: 0
+  padding-bottom: 60.57%
+  &__header
+    padding-top: 12.5em
+  &__title
+    margin-bottom: 30px
+  &__descr
+    p:not(:last-child)
+      margin-bottom: 26px
+
+.feature
+  text-align: center
+  &__icon
+    +flex-center
+    position: relative
+    width: 40px
+    height: 40px
+    transform: rotate(45deg)
+    overflow: hidden
+    +hover
+      &:before
+        transform: scaleX(2)
+      &:after
+        transform: scaleY(2)
+    &:before,&:after
+      content: ' '
+      position: absolute
+      border-color: $white
+      border-width: 1px
+      transition: transform $tr
+    &:before
+      width: 60%
+      height: 100%
+      border-top-style: solid
+      border-bottom-style: solid
+    &:after
+      height: 60%
+      width: 100%
+      border-left-style: solid
+      border-right-style: solid
+    [class*='icon-']
+      transform: rotate(-45deg)
+    .icon-check
+      color: $mainGreen
+      font-size: 1.125em
+  &__text
+    font-family: Montserrat
+    font-size: 1.125em
+    font-weight: 300
+    line-height: 1.33
+    color: $textWhite

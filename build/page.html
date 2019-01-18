@@ -14,48 +14,87 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <h1>Index page</h1>
-      <p>Hello from partials/_header.html</p>
-      <svg class="icon icon-facebook">
-        <use xlink:href="img/sprite.svg#icon-facebook"></use>
-      </svg>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="checkbox">
-          <span class="checkbox__text">checkbox</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="exemple-name" checked>
-          <span class="checkbox__text">checkbox-checked</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <!-- begin input -->
-      <label class="radio">
-        <input type="radio" name="exemple-name">
-        <span class="radio__text">text</span>
-      </label>
-      <!-- end input -->
-      <!-- begin breadcrumbs -->
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#">Внутренняя</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <span>Корзина</span>
-        </li>
-      </ul>
-      <!-- end breadcrumbs -->
-      <li>Item1</li>
-      <li>Item2</li>
+      <section class="hero">
+        <div class="hero__inner inner">
+          <div class="hero__header row">
+            <div class="col-7 hero__header-inner">
+              <h1 class="hero__title title">
+                <span class="text-thin">Решение </span><span class="text-green">психологических </span><span class="text-blue">проблем </span><span class="text-thin">с 1 сеанса</span>
+              </h1>
+              <div class="hero__descr subtitle">
+                <p>
+                  <span class="text-bold">Эффективная</span> работа с вашим подсознанием, индивидуальный подход к каждому клиенту </p>
+                <p> Сеансы проходят по <span class="text-bold">онлайн-видеосвязи</span> и доступны из любого места </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__features">
+            <div class="row">
+              <div class="col-3">
+                <div class="feature">
+                  <div class="feature__icon">
+                    <svg class="icon icon-check">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </div>
+                  <div class="feature__descr"> Результат на всю жизнь </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="feature">
+                  <div class="feature__icon">
+                    <svg class="icon icon-check">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </div>
+                  <div class="feature__descr"> Комфортный формат общения </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="feature">
+                  <div class="feature__icon">
+                    <svg class="icon icon-check">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </div>
+                  <div class="feature__descr"> Анонимность/конфиденциальность на всех этапах </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="feature">
+                  <div class="feature__icon">
+                    <svg class="icon icon-check">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </div>
+                  <div class="feature__descr"> Не растягиваю количество сеансов </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__cta">
+            <a href="/" class="btn">Выбрать дату и время предварительной консультации</a>
+          </div>
+        </div>
+      </section>
+      <section class="recovery">
+        <div class="recovery__inner inner">
+          <div class="block">
+            <div class="block__header">
+              <div class="block__image-wrapper">
+                <svg class="icon icon-decor">
+                  <use xlink:href="img/sprite.svg#icon-decor"></use>
+                </svg>
+                <img src="img/communication.png" alt="communication" class="block__image">
+              </div>
+              <h3 class="block__title-top"> Общение и </br>отношения </h3>
+            </div>
+            <div class="block__body">
+              <div class="block__descr"> Проработка любых проблем, мешающих полноценному межличностному взаимодействию и нарушающих качество жизни: семейные неурядицы, страх общения с противоположным полом, боязнь осуждения, патологическая ревность, отсутствие уверенности, неумение отказывать и многое другое. </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

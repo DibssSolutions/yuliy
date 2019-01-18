@@ -1,0 +1,39 @@
+<section class="hero">
+  <div class="hero__inner inner">
+    <div class="hero__header row">
+      <div class="col-7 hero__header-inner">
+        <h1 class="hero__title title">
+          <span class="text-thin">Решение </span
+          ><span class="text-green">психологических </span
+          ><span class="text-blue">проблем </span
+          ><span class="text-thin">с 1 сеанса</span>
+        </h1>
+        <div class="hero__descr subtitle">
+          <p>
+            <span class="text-bold">Эффективная</span> работа с вашим подсознанием, индивидуальный подход к каждому клиенту
+          </p>
+          <p>
+            Сеансы проходят по <span class="text-bold">онлайн-видеосвязи</span> и доступны из любого места
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hero__features">
+      <div class="row">
+        {% for item in [
+          'Результат на всю жизнь',
+          'Комфортный формат общения',
+          'Анонимность/конфиденциальность на всех этапах',
+          'Не растягиваю количество сеансов'
+        ] %}
+          <div class="col-3">
+            {{ mixins.feature({ text: item, yes: true }) }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="hero__cta">
+      <a href="/" class="btn">Выбрать дату и время предварительной консультации</a>
+    </div>
+  </div>
+</section>

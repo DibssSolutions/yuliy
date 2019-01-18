@@ -24,7 +24,7 @@
     #{$property}: #{$min-size}#{$unit}
   @media (min-width: #{$max-width}#{$unit})
     #{$property}: #{$max-size}#{$unit}
-    
+
 =fs($sizeValue: 16)
   font-size: $sizeValue + px
   font-size: $sizeValue / 10 + rem
@@ -86,7 +86,7 @@
 =gh($color1, $color2)
   background-image: linear-gradient(left, $color1, $color2)
 
-// font-family 
+// font-family
 =font($alias, $name)
   @font-face
     font-family: $alias
@@ -257,7 +257,7 @@
 
 =better-blur($radius)
   filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='#{$radius}' result='b'/%3E%3CfeMorphology operator='dilate' radius='#{$radius}'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E %3C/svg%3E#a")
-  
+
 =scale($var)
   transform: scale($var)
 
@@ -278,11 +278,16 @@
     font-size: $font-size + px
   @if $letter-spacing != null
     letter-spacing: ($letter-spacing / 1000) + em
-    
+
+=flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
 =flex-size($val)
   flex: 0 0 $val
   min-width: $val
-  
+
 =fadeout($tr)
   opacity: 0
   visibility: hidden
@@ -296,3 +301,30 @@
   height: $size + px
   width: $size + px
   border-radius: 50%
+
+=generate_grid($columns: 12, $sizeSm: true, $sizeMd: true, $sizeLg: true)
+  @for $i from 1 through $columns
+    $width: percentage($i / $columns)
+    .col-#{$i}
+      flex: 0 0 $width
+      min-width: $width
+    @if($sizeSm)
+    .col-sm-#{$i}
+      +r(767)
+        flex: 0 0 $width
+        min-width: $width
+    @if($sizeMd)
+    .col-md-#{$i}
+      +r(1023)
+        flex: 0 0 $width
+        min-width: $width
+    @if($sizeLg)
+    .col-lg-#{$i}
+      +r(1259)
+        flex: 0 0 $width
+        min-width: $width
+
+    // .col-offset-#{$i}
+    //   margin-left: $width
+
+

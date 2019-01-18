@@ -1,4 +1,47 @@
 body
-	background: #FFF
-	line-height: 1.4
+  background: repeat center / 198px 198px url('./../img/noise-bg.jpg')
+  line-height: 1.4
+  font-family: $montserrat
+  font-size: 16px
+  font-weight: 400
+  +sm
+    font-size: 12px
 
+.btn
+  display: inline-block
+  position: relative
+  padding: 25px 32px
+  font-family: $museo
+  text-shadow: 0.5px 0.9px 1px rgba(26, 30, 29, 0.32)
+  font-size: 18px
+  font-weight: 900
+  line-height: 1.9
+  text-decoration: none
+  text-align: center
+  color: $white
+  border-radius: 4px
+  background-color: $mainGreen
+  &:hover:after
+    +fadein
+    transform: translateY(4px)
+  &:after
+    +coverdiv
+    z-index: -1
+    content: ''
+    background-color: $darkGreen
+    border-radius: 4px
+    opacity: 0
+    visibility: hidden
+    transition: transform 0.2s, opacity 0.3s
+
+.block
+  &__image-wrapper
+    position: relative
+    display: inline-block
+  &__image
+    +vcenter
+    max-width: 100%
+  .icon-decor
+    font-size: 7.7em
+    fill: $mainGreen
+    fill-rule: evenodd

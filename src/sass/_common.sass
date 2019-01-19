@@ -5,6 +5,10 @@ body
   font-size: 16px
   font-weight: 400
   color: $textBlack
+  opacity: 0
+  transition: opacity $tr
+  &.body-loaded
+    opacity: 1
   +sm
     font-size: 12px
 
@@ -47,14 +51,17 @@ body
     font-weight: 900
     line-height: 1.2
     color: $titleBlack
+    min-height: 66px
     &_small
       font-size: 17px
       line-height: 1.41
+      min-height: inherit
   &__image-wrapper
     position: relative
     display: inline-block
     +flex-size(123px)
-    margin-right: 20px
+    + .block__title
+      margin-left: 20px
   &__image
     +vcenter
     max-width: 100%
@@ -62,7 +69,26 @@ body
     font-size: 7.7em
     fill: $mainGreen
     fill-rule: evenodd
+  &__number
+    align-self: flex-start
+    margin-top: 10px
+    font-size: 25px
+    line-height: 1
+    position: relative
+  &__line
+    width: 289px
+    // height: 51px
+    position: absolute
+    bottom: 80%
+    left: 20px
+  &__subtitle
+    font-weight: 700
+    color: $titleBlack
+    margin-bottom: 24px
   &__descr
     font-size: 15px
     line-height: 1.6
     color: $textBlack
+    &_small
+      font-size: 14px
+      color: $textLight

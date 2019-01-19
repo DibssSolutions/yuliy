@@ -1,0 +1,24 @@
+.book-section
+	margin-bottom: 100px
+	&__image
+		position: relative
+		overflow: visible
+		svg
+			height: 0
+			width: 0
+		img
+			filter: url(#dropshadow)
+			transform: rotate(-7deg)
+			// filter: url(#displacement)
+	&__image-shadow
+		background-color: green
+		border-radius: 8px
+		+coverdiv
+		// filter: url(#dropshadow)
+	&__descr
+		// filter: url(#water-color)
+		// filter: url(#dropshadow)
+	&__title
+		// filter: url(#displacement)
+		// filter: url(#turbulense)
+		filter: url(#ripple-filter)

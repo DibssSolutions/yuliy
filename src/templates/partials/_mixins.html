@@ -53,6 +53,20 @@
         {{ icon('decor') }}
         <img src="img/{{ props.image }}.png" alt="{{ props.image }}" class="block__image">
       </div>
+      {% if props.number %}
+        <span class="block__number">
+          {{ props.number }}
+          {% if props.line %}
+            <svg class="block__line" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 270.5 53.5">
+            <style type="text/css">
+              .st0{fill:none;stroke:#34C399;}
+            </style>
+              <path class="st0 path1" d="M0.5,51.5c0,0,200-107,269-10"/>
+              <path class="st0 path2" d="M260.5,36.4l9,5l-5-18"/>
+            </svg>
+          {% endif %}
+        </span>
+      {% endif %}
       {% if props.titleTop %}
         <h3 class="block__title block__title_small">
           {{ props.titleTop | safe }}
@@ -60,7 +74,17 @@
       {% endif %}
     </div>
     <div class="block__body">
-      <div class="block__descr">
+      {% if props.title %}
+        <h3 class="block__title">
+          {{ props.title | safe }}
+        </h3>
+      {% endif %}
+      {% if props.subtitle %}
+        <div class="block__subtitle">
+          {{ props.subtitle }}
+        </div>
+      {% endif %}
+      <div class="block__descr{% if props.descrSmall %} block__descr_small{% endif %}">
         {{ props.descr }}
       </div>
     </div>

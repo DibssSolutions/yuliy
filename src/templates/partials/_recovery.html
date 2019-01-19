@@ -41,11 +41,11 @@
      </h4>
     <div class="recovery__blocks row">
       {% for item in blocks %}
-        <div class="recovery__block col-4">
+        <div class="recovery__block col-4" data-sal="slide-up" data-sal-delay="{{ loop.index * 200 }}">
           {{ mixins.block(item) }}
         </div>
       {% endfor %}
-      <div class="recovery__block recovery__block_card col-4">
+      <div class="recovery__block recovery__block_card col-4" data-sal="fade" data-sal-delay="700">
         <div class="card-danger">
           <h3 class="card-danger__title">
             <span class="text-red text-black">Я не работаю, </span><span class="text-light">если клиент:</span>

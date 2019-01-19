@@ -19,12 +19,12 @@
           <div class="hero__header row">
             <div class="col-7 hero__header-inner">
               <h1 class="hero__title title">
-                <span class="text-thin">Решение </span><span class="text-green">психологических </span><span class="text-blue">проблем </span><span class="text-thin">с 1 сеанса</span>
+                <span class="text-thin" data-splitting>Решение </span><span class="text-green" data-splitting>психологических </span><span class="text-blue" data-splitting>проблем </span><span class="text-thin" data-splitting>с 1 сеанса</span>
               </h1>
               <div class="hero__descr subtitle">
-                <p>
+                <p data-animation="from-left">
                   <span class="text-bold">Эффективная</span> работа с вашим подсознанием, индивидуальный подход к каждому клиенту </p>
-                <p> Сеансы проходят по <span class="text-bold">онлайн-видеосвязи</span> и доступны из любого места </p>
+                <p data-animation="from-left"> Сеансы проходят по <span class="text-bold">онлайн-видеосвязи</span> и доступны из любого места </p>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@
             <span class="text-thin">С чем </span><span class="text-black">я помогу:</span>
           </h4>
           <div class="recovery__blocks row">
-            <div class="recovery__block col-4">
+            <div class="recovery__block col-4" data-sal="slide-up" data-sal-delay="200">
               <div class="block">
                 <div class="block__header">
                   <div class="block__image-wrapper">
@@ -102,7 +102,7 @@
                 </div>
               </div>
             </div>
-            <div class="recovery__block col-4">
+            <div class="recovery__block col-4" data-sal="slide-up" data-sal-delay="400">
               <div class="block">
                 <div class="block__header">
                   <div class="block__image-wrapper">
@@ -118,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <div class="recovery__block col-4">
+            <div class="recovery__block col-4" data-sal="slide-up" data-sal-delay="600">
               <div class="block">
                 <div class="block__header">
                   <div class="block__image-wrapper">
@@ -134,7 +134,7 @@
                 </div>
               </div>
             </div>
-            <div class="recovery__block col-4">
+            <div class="recovery__block col-4" data-sal="slide-up" data-sal-delay="800">
               <div class="block">
                 <div class="block__header">
                   <div class="block__image-wrapper">
@@ -150,7 +150,7 @@
                 </div>
               </div>
             </div>
-            <div class="recovery__block col-4">
+            <div class="recovery__block col-4" data-sal="slide-up" data-sal-delay="1000">
               <div class="block">
                 <div class="block__header">
                   <div class="block__image-wrapper">
@@ -166,7 +166,7 @@
                 </div>
               </div>
             </div>
-            <div class="recovery__block recovery__block_card col-4">
+            <div class="recovery__block recovery__block_card col-4" data-sal="fade" data-sal-delay="700">
               <div class="card-danger">
                 <h3 class="card-danger__title">
                   <span class="text-red text-black">Я не работаю, </span><span class="text-light">если клиент:</span>
@@ -216,21 +216,203 @@
         <div class="book-section__inner inner">
           <div class="book-section__row row">
             <div class="book-section__image col-5">
-              <img src="./img/book.jpg" alt="book.jpg">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="400">
+                <defs>
+                  <filter id="dropshadow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" rimitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+                    <feOffset dx="10" dy="10" in="SourceAlpha" result="offset" />
+                    <feGaussianBlur stdDeviation="5 5" in="offset" result="blur" />
+                    <feFlood flood-color="#000" flood-opacity="0.91" result="flood" />
+                    <feComposite in="flood" in2="blur" operator="in" result="composite" />
+                    <feMerge result="merge">
+                      <feMergeNode in="composite" result="mergeNode" />
+                      <feMergeNode in="SourceGraphic" result="mergeNode1" />
+                    </feMerge>
+                  </filter>
+                  <!-- <filter id="dropshadow" x="0" y="0" width="200%" height="200%">
+              <feOffset
+                result="offsetResult"
+                in="SourceAlpha"
+                dx="10"
+                dy="14"
+              />
+              <feGaussianBlur
+                result="blurResult"
+                in="offsetResult"
+                stdDeviation="9"
+              />
+              <feBlend in="SourceGraphic" in2="blurResult" mode="normal" />
+            </filter> -->
+                  <!-- <filter id="dropshadow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feDropShadow stdDeviation="5 5" in="SourceGraphic" dx="10" dy="10" flood-color="#1F3646" flood-opacity="1" x="0%" y="0%" width="100%" height="100%" result="dropShadow"/>
+            </filter> -->
+                  <!-- <filter id="displacement" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feDisplacementMap in="SourceGraphic" in2="SourceGraphic" scale="20" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap"/>
+            </filter>
+            <filter id="turbulense">
+              <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+            </filter>
+            <filter id="water-color" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency="0.05 0.05" numOctaves="5" seed="1" stitchTiles="stitch" result="turbulence"/>
+                <feDiffuseLighting surfaceScale="0.5" diffuseConstant="3.2" lighting-color="#ffffff" in="turbulence" result="diffuseLighting">
+                      <feDistantLight azimuth="150" elevation="16"/>
+                  </feDiffuseLighting>
+                <feTurbulence type="fractalNoise" baseFrequency="0.011 0.004" numOctaves="2" seed="3" stitchTiles="noStitch" result="turbulence1"/>
+                <feColorMatrix type="saturate" values="3" in="turbulence1" result="colormatrix"/>
+                <feColorMatrix type="matrix" values="2 0 0 0 0
+              0 1.5 0 0 0
+              0 0 2 0 0
+              0 0 0 2 0" in="colormatrix" result="colormatrix1"/>
+                <feBlend mode="multiply" in="diffuseLighting" in2="colormatrix1" result="blend"/>
+                <feComposite in="blend" in2="SourceAlpha" operator="in" result="composite1"/>
+              </filter>
+              <filter id="ripple-filter">                  
+                  <feImage x="0" y="0" width="4708" height="3072" result="rippleImage" xlink:href="./IMG/HERO.PNG" /> 
+                  
+                  <feDisplacementMap id="displacement-map"
+                                     xChannelSelector="R" 
+                                     yChannelSelector="G" 
+                                     in="SourceGraphic" 
+                                     in2="rippleImage"
+                                     result="displacementMap"
+                                     color-interpolation-filters="sRGB"
+                                     scale="0" />
+            
+                  <feComposite operator="in" in2="rippleImage"></feComposite>
+                </filter>     -->
+                </defs>
+              </svg>
+              <img src="./img/book.jpg" alt="book.jpg" />
+              <!-- <div class="book-section__image-shadow"></div> -->
             </div>
             <div class="book-section__text col-7">
-              <h2 class="title-big">
+              <h2 class="book-section__title title-big">
                 <span class="text-black text-green text-row">Книга </span><span class="text-row text-thin">обо всем</span>
               </h2>
-              <div class="book__descr descr"> Многие ответы на свои вопросы вы получите в книге, которую я предлагаю вам получить совершенно <span class="text-bold">бесплатно.</span>
+              <div class="book-section__descr descr"> Многие ответы на свои вопросы вы получите в книге, которую я предлагаю вам получить совершенно <span class="text-bold">бесплатно.</span>
               </div>
-              <div class="book__cta">
+              <div class="book-section__cta">
                 <a href="#" class="btn">
                   <span class="btn__icon">
                     <svg class="icon icon-download">
                       <use xlink:href="img/sprite.svg#icon-download"></use>
                     </svg>
                   </span> Скачать книгу (PDF) </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="process">
+        <div class="process__inner inner">
+          <h3 class="process__title title">
+            <span class="text-thin">Как все </span><span class="text-green">проходит</span>
+          </h3>
+          <div class="process__subtitle subtitle"> Схема взаимодействия — проверенная, надежная и эффективная. </div>
+          <div class="process__blocks row">
+            <div class="process__block col-3">
+              <div class="block">
+                <div class="block__header">
+                  <div class="block__image-wrapper">
+                    <svg class="icon icon-decor">
+                      <use xlink:href="img/sprite.svg#icon-decor"></use>
+                    </svg>
+                    <img src="img/consultation.png" alt="consultation" class="block__image">
+                  </div>
+                  <span class="block__number"> 1 <svg class="block__line" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 270.5 53.5">
+                      <style type="text/css">
+                        .st0 {
+                          fill: none;
+                          stroke: #34C399;
+                        }
+
+                      </style>
+                      <path class="st0 path1" d="M0.5,51.5c0,0,200-107,269-10" />
+                      <path class="st0 path2" d="M260.5,36.4l9,5l-5-18" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="block__body">
+                  <h3 class="block__title"> Предварительная </br>консультация </h3>
+                  <div class="block__subtitle"> Выявление и обозначение проблемы. </div>
+                  <div class="block__descr block__descr_small"> Обязательная предварительная диагностика, в ходе которой мы выявляем и обозначаем проблему, после чего ставим цели работы с конкретными критериями результата. </div>
+                </div>
+              </div>
+            </div>
+            <div class="process__block col-3">
+              <div class="block">
+                <div class="block__header">
+                  <div class="block__image-wrapper">
+                    <svg class="icon icon-decor">
+                      <use xlink:href="img/sprite.svg#icon-decor"></use>
+                    </svg>
+                    <img src="img/study.png" alt="study" class="block__image">
+                  </div>
+                  <span class="block__number"> 2 <svg class="block__line" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 270.5 53.5">
+                      <style type="text/css">
+                        .st0 {
+                          fill: none;
+                          stroke: #34C399;
+                        }
+
+                      </style>
+                      <path class="st0 path1" d="M0.5,51.5c0,0,200-107,269-10" />
+                      <path class="st0 path2" d="M260.5,36.4l9,5l-5-18" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="block__body">
+                  <h3 class="block__title"> Сеанс </br>проработки </h3>
+                  <div class="block__subtitle"> Применение эффективных техник работы с подсознанием. </div>
+                  <div class="block__descr block__descr_small"> Вся работа и изменения происходят внутри Вас и выполняется на уровне подсознания, под моим контролем и поддержкой. </div>
+                </div>
+              </div>
+            </div>
+            <div class="process__block col-3">
+              <div class="block">
+                <div class="block__header">
+                  <div class="block__image-wrapper">
+                    <svg class="icon icon-decor">
+                      <use xlink:href="img/sprite.svg#icon-decor"></use>
+                    </svg>
+                    <img src="img/test.png" alt="test" class="block__image">
+                  </div>
+                  <span class="block__number"> 3 <svg class="block__line" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 270.5 53.5">
+                      <style type="text/css">
+                        .st0 {
+                          fill: none;
+                          stroke: #34C399;
+                        }
+
+                      </style>
+                      <path class="st0 path1" d="M0.5,51.5c0,0,200-107,269-10" />
+                      <path class="st0 path2" d="M260.5,36.4l9,5l-5-18" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="block__body">
+                  <h3 class="block__title"> Тест </br>результата </h3>
+                  <div class="block__subtitle"> Осязаемые перемены в реальной жизни. </div>
+                  <div class="block__descr block__descr_small"> После каждой проработки тест результата с краткими отчетами об изменениях. </div>
+                </div>
+              </div>
+            </div>
+            <div class="process__block col-3">
+              <div class="block">
+                <div class="block__header">
+                  <div class="block__image-wrapper">
+                    <svg class="icon icon-decor">
+                      <use xlink:href="img/sprite.svg#icon-decor"></use>
+                    </svg>
+                    <img src="img/premium.png" alt="premium" class="block__image">
+                  </div>
+                  <span class="block__number"> 4 </span>
+                </div>
+                <div class="block__body">
+                  <h3 class="block__title"> Премия </h3>
+                  <div class="block__subtitle"> Вознаграждение за результат. </div>
+                  <div class="block__descr block__descr_small"> Многие клиенты, благодарят меня после проработок премией за результат, это является добровольным действием. </div>
+                </div>
               </div>
             </div>
           </div>

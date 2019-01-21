@@ -1,0 +1,27 @@
+<section class="results">
+  <div class="results__inner inner">
+    <div class="results__content">
+      <h3 class="results__title title">
+        Оценим <span class="text-blue">ваши </span
+        ><span class="text-green">результаты </span>вместе
+      </h3>
+      <div class="results__descr text">
+        Не бросаю клиентов после проработок, поскольку крайне важно оценить
+        эффективность проведенной работы. После сеанса проводится дополнительная
+        проверка — вы пишете короткий отчет о происходящих с вами изменениях.
+      </div>
+      <div class="results__subtitle title-small">
+        Возможные <span class="text-bold"><br>примеры</span> результатов:
+      </div>
+      <ul class="results__list">
+        {% for item in [
+          'Самоощущение свободного человека.',
+          'Возможность управлять своими эмоциями.',
+          'Исчезновение мучившей годами фобии.'
+        ] %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

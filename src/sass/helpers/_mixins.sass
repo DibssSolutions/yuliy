@@ -302,12 +302,17 @@
   width: $size + px
   border-radius: 50%
 
-=generate_grid($columns: 12, $sizeSm: true, $sizeMd: true, $sizeLg: true)
+=generate_grid($columns: 12, $sizeXs: true, $sizeSm: true, $sizeMd: true, $sizeLg: true)
   @for $i from 1 through $columns
     $width: percentage($i / $columns)
     .col-#{$i}
       flex: 0 0 $width
       min-width: $width
+    @if($sizeXs)
+    .col-xs-#{$i}
+      +r(520)
+        flex: 0 0 $width
+        min-width: $width
     @if($sizeSm)
     .col-sm-#{$i}
       +r(767)

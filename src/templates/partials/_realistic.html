@@ -1,0 +1,36 @@
+<section class="realistic">
+  <div class="realistic__inner inner">
+    <h3 class="realistic__title title">
+      <span class="text-thin">Обращаться за помощью к специалисту - </span
+      ><span class="text-green">нормально</span>
+    </h3>
+    <div class="realistic__descr text">
+      <p>
+        Сегодня люди грамотно подходят к решению личностных проблем и
+        прорабатывают их со специалистами, способными оказать реальную помощь.
+        Отлично, что стереотипы о том, что к психологу обращаться стыдно,
+        остались в прошлом.
+      </p>
+      <p>
+        Работая со мной, вы получите исключительно квалифицированную помощь,
+        основанную на научном, проверенном подходе
+      </p>
+    </div>
+    <h5 class="realistic__subtitle title-small">
+      На моих сеансах <span class="text-black">точно нет:</span>
+    </h5>
+    <div class="realitic__restrictions row">
+      {% for item in [
+        'Медикаментов <br>и БАДов',
+        'Гаданий <br>и астрологии',
+        'Фэн-шуя <br>и эзотерики',
+        'Мистики <br>и ритуалов',
+        'Аффирмаций <br>и прочего <br>шарлатанства'
+      ] %}
+        <div class="col">
+          {{ mixins.feature({ text: item, not: true }) }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

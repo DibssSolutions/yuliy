@@ -31,7 +31,7 @@
 
 <!-- FEATURE -->
 {% macro feature(item) %}
-  <div class="feature">
+  <div class="feature{% if item.not %} feature_restriction{% endif %}">
     <div class="feature__icon">
       {% if item.yes %}
         {{ icon('check') }}
@@ -41,7 +41,7 @@
       {% endif %}
     </div>
     <div class="feature__descr">
-      {{ item.text }}
+      {{ item.text | safe }}
     </div>
   </div>
 {% endmacro %}

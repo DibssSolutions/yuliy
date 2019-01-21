@@ -1,0 +1,43 @@
+<section class="moments">
+  <div class="moments__inner inner">
+    <h3 class="moments__title title">
+      <span class="text-green">Значимые </span>
+      <span class="text-thin"
+        >моменты<br />
+        в процессе работы</span
+      >
+    </h3>
+    <div class="moments__content row">
+      {% for moment in [
+        {
+          image: 'time-limitless',
+          title: 'Без ограничений </br>по времени',
+          descr: "Сеанс длится столько, сколько необходимо для эффективной проработки.",
+          descrSmall: true
+        },
+        {
+          image: 'quick-result',
+          title: 'Быстрый </br>и ощутимый </br>результат',
+          descr: "Вам не придется годами ходить к психологу и тратить время на малоэффективные задания.",
+          descrSmall: true
+        },
+        {
+          image: 'online-consulting',
+          title: 'Дистанционно </br>по удобному </br>способу связи',
+          descr: "Возможны консультации и работа по любому способу связи на ваше усмотрение.",
+          descrSmall: true
+        },
+        {
+          image: 'openness',
+          title: 'Открытость',
+          descr: "Я работаю официально и зарегистрирован в качестве ИП - скрывать нечего и незачем.",
+          descrSmall: true
+        }
+      ] %}
+        <div class="col-3 col-sm-6">
+            {{ mixins.block(moment) }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

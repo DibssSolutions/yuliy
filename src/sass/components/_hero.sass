@@ -4,38 +4,68 @@
   background-repeat: no-repeat
   background-position: 100% 0
   color: $titleWhite
-  height: 0
-  padding-bottom: 60.57%
+  height: 60.57vw
+  min-height: 900px
+  +lg
+    background-position: 50% 0
+  +sm
+    background-position: 60% 0
   &__header
-    padding-top: 12.5em
+    padding-top: 10vw
+    margin-bottom: 70px
+    width: 58.333%
   &__title
     margin-bottom: 30px
     span
       display: inline-block
   &__descr
+    padding-right: 100px
+    +lg
+      padding-right: 0
     p:not(:last-child)
       margin-bottom: 26px
+  &__features
+    margin-bottom: 45px
+  &__cta
+    text-align: center
 
 .feature
   text-align: center
+  +sm
+    display: flex
+  +hover
+    .feature__icon:before
+      transform: scaleX(2)
+    .feature__icon:after
+      transform: scaleY(2)
   &__icon
-    +flex-center
+    display: inline-flex
+    justify-content: center
+    align-items: center
     position: relative
-    width: 40px
-    height: 40px
+    height: 50px
+    width: 50px
+    margin-bottom: 32px
     transform: rotate(45deg)
     overflow: hidden
-    +hover
-      &:before
-        transform: scaleX(2)
-      &:after
-        transform: scaleY(2)
+    +md
+      width: 40px
+      height: 40px
+    +sm
+      margin-bottom: 10px
+    +sm
+      width: auto
+      height: auto
     &:before,&:after
       content: ' '
       position: absolute
       border-color: $white
       border-width: 1px
       transition: transform $tr
+      +sm
+        display: none
+      .feature_restriction &
+        border-color: #b2c1cb
     &:before
       width: 60%
       height: 100%
@@ -51,9 +81,15 @@
     .icon-check
       color: $mainGreen
       font-size: 1.125em
-  &__text
+    .icon-times
+      color: $coral
+      font-size: 1em
+  &__descr
     font-family: Montserrat
     font-size: 1.125em
     font-weight: 300
     line-height: 1.33
-    color: $textWhite
+    +sm
+      padding-left: 10px
+      br
+        display: none

@@ -1,8 +1,8 @@
 {% set blocks = [
   {
     image: 'communication',
-    titleTop: 'Общение и </br>отношения',
-    descr: "Проработка любых проблем, мешающих полноценному межличностному взаимодействию и нарушающих качество жизни: семейные неурядицы, страх общения с противоположным полом, боязнь осуждения, патологическая ревность, отсутствие уверенности, неумение отказывать и многое другое. 
+    titleTop: 'Общение </br>и отношения',
+    descr: "Проработка любых проблем, мешающих полноценному межличностному взаимодействию и нарушающих качество жизни: семейные неурядицы, страх общения с противоположным полом, боязнь осуждения, патологическая ревность, отсутствие уверенности, неумение отказывать и многое другое.
     "
   },
   {
@@ -33,19 +33,19 @@
     <h2 class="recovery__title title">
         <span class="text-thin">Почти любой </span></br><span class="text-green">вопрос </span>решаем
      </h2>
-     <div class="recovery__descr subtitle">
-        Консультирую только взрослых людей, которые настроены на работу с собой и готовы разбираться в собственном внутреннем состоянии, хотят узнать себя с новой — лучшей стороны. 
+     <div class="recovery__descr descr">
+        Консультирую только взрослых людей, которые настроены на работу с собой и готовы разбираться в собственном внутреннем состоянии, хотят узнать себя с новой — лучшей стороны.
      </div>
-     <h4 class="recovery__subtitle">
+     <h4 class="recovery__subtitle title-small">
         <span class="text-thin">С чем </span><span class="text-black">я помогу:</span>
      </h4>
     <div class="recovery__blocks row">
       {% for item in blocks %}
-        <div class="recovery__block col-4" data-sal="slide-up" data-sal-delay="{{ loop.index * 200 }}">
+        <div class="recovery__block col-4 col-md-6 col-sm-12" data-sal="slide-up" data-sal-delay="{{ loop.index * 200 }}">
           {{ mixins.block(item) }}
         </div>
       {% endfor %}
-      <div class="recovery__block recovery__block_card col-4" data-sal="fade" data-sal-delay="700">
+      <div class="recovery__block recovery__block_card col-4 col-md-6 col-sm-12" data-sal="fade" data-sal-delay="700">
         <div class="card-danger">
           <h3 class="card-danger__title">
             <span class="text-red text-black">Я не работаю, </span><span class="text-light">если клиент:</span>
@@ -65,7 +65,11 @@
       </div>
     </div>
     <div class="recovery__cta">
-      <a href="#" class="btn">Выбрать дату и время предварительной консультации</a>
+      <a href="#" class="btn">
+        <span class="btn__inner">
+          Выбрать дату и время предварительной консультации
+        </span>
+      </a>
     </div>
   </div>
 </section>

@@ -16,6 +16,9 @@
     <div class="out">
       <section class="hero">
         <div class="hero__inner inner">
+          <div class="hero__square">
+            <img src="img/square.png" alt="why">
+          </div>
           <div class="hero__header">
             <h1 class="hero__title title">
               <span class="text-thin">Решение </span><br />
@@ -199,7 +202,7 @@
               <footer class="blockquote__author"> Юлий <span class="text-green">Ляшенко</span>
               </footer>
             </blockquote>
-            <p> С вами будет работать Юлий Ляшенко - мастер проработки подсознания, психолог-практик, выпускник международного института практической психологии, член Национальной Ассоциации Специалистов по Психосоматике и Восточноевропейской Ассоциации Гипнотерапевтов и клинических Психологов. </p>
+            <p> С вами будет работать Юлий Ляшенко - мастер проработки подсознания, <nobr>психолог-практик,</nobr> выпускник международного института практической психологии, член Национальной Ассоциации Специалистов по Психосоматике и Восточноевропейской Ассоциации Гипнотерапевтов и клинических Психологов. </p>
             <p> Работаю не со следствиями, а с причинами. Главная цель - не просто облегчить состояние, а действительно избавить от проблемы, получить стойкий и ощутимый результат. Каждый клиент для меня ценен и индивидуален, всегда работаю с полной отдачей. </p>
             <p> Понимаю, что к специалисту человек обращается тогда, когда нет собственных ресурсов для полноценного решения проблемы. </p>
             <p> Моя методика проработки направлена не только на работу здесь и сейчас - я обучаю техникам, которые вы сможете успешно применять всю жизнь. Объективные и измеримые изменения вы получите уже через 1–3 сеанса. </p>
@@ -220,11 +223,11 @@
       <section class="book-section">
         <div class="book-section__inner inner">
           <div class="book-section__row row">
-            <div class="book-section__image col-5 col-sm-12">
+            <div class="book-section__image col-5 col-md-6 col-sm-12">
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="400">
                 <defs>
                   <filter id="dropshadow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" rimitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
-                    <feOffset dx="10" dy="10" in="SourceAlpha" result="offset" />
+                    <feOffset dx="5" dy="15" in="SourceAlpha" result="offset" />
                     <feGaussianBlur stdDeviation="5 5" in="offset" result="blur" />
                     <feFlood flood-color="#000" flood-opacity="0.91" result="flood" />
                     <feComposite in="flood" in2="blur" operator="in" result="composite" />
@@ -295,14 +298,14 @@
               <img src="./img/book.jpg" alt="book.jpg" />
               <!-- <div class="book-section__image-shadow"></div> -->
             </div>
-            <div class="book-section__text col-7 col-sm-12">
+            <div class="book-section__text col-7 col-md-6 col-sm-12">
               <h2 class="book-section__title title-big">
                 <span class="text-black text-green text-row">Книга </span><span class="text-row text-thin">обо всем</span>
               </h2>
               <div class="book-section__descr descr"> Многие ответы на свои вопросы вы получите в книге, которую я предлагаю вам получить совершенно <span class="text-bold">бесплатно.</span>
               </div>
               <div class="book-section__cta">
-                <a href="#" class="btn">
+                <a href="#" class="btn btn_small">
                   <span class="btn__inner">
                     <span class="btn__icon">
                       <svg class="icon icon-download">
@@ -320,7 +323,7 @@
           <h3 class="process__title title">
             <span class="text-thin">Как все </span><span class="text-green">проходит</span>
           </h3>
-          <div class="process__subtitle subtitle"> Схема взаимодействия — проверенная, надежная и эффективная. </div>
+          <div class="process__descr descr"> Схема взаимодействия — проверенная, надежная и эффективная. </div>
           <div class="process__blocks row">
             <div class="process__block col-3 col-md-6 col-xs-12">
               <div class="block">
@@ -343,9 +346,10 @@
                       <path class="st0 path2" d="M260.5,36.4l9,5l-5-18" />
                     </svg>
                   </span>
+                  <h3 class="block__title d-sm-block"> Предварительная </br>консультация </h3>
                 </div>
                 <div class="block__body">
-                  <h3 class="block__title"> Предварительная </br>консультация </h3>
+                  <h3 class="block__title d-sm-none"> Предварительная </br>консультация </h3>
                   <div class="block__subtitle"> Выявление и обозначение проблемы. </div>
                   <div class="block__descr block__descr_small"> Обязательная предварительная диагностика, в ходе которой мы выявляем и обозначаем проблему, после чего ставим цели работы с конкретными критериями результата. </div>
                 </div>
@@ -372,9 +376,10 @@
                       <path class="st0 path2" d="M260.5,36.4l9,5l-5-18" />
                     </svg>
                   </span>
+                  <h3 class="block__title d-sm-block"> Сеанс </br>проработки </h3>
                 </div>
                 <div class="block__body">
-                  <h3 class="block__title"> Сеанс </br>проработки </h3>
+                  <h3 class="block__title d-sm-none"> Сеанс </br>проработки </h3>
                   <div class="block__subtitle"> Применение эффективных техник работы с подсознанием. </div>
                   <div class="block__descr block__descr_small"> Вся работа и изменения происходят внутри Вас и выполняется на уровне подсознания, под моим контролем и поддержкой. </div>
                 </div>
@@ -401,9 +406,10 @@
                       <path class="st0 path2" d="M260.5,36.4l9,5l-5-18" />
                     </svg>
                   </span>
+                  <h3 class="block__title d-sm-block"> Тест </br>результата </h3>
                 </div>
                 <div class="block__body">
-                  <h3 class="block__title"> Тест </br>результата </h3>
+                  <h3 class="block__title d-sm-none"> Тест </br>результата </h3>
                   <div class="block__subtitle"> Осязаемые перемены в реальной жизни. </div>
                   <div class="block__descr block__descr_small"> После каждой проработки тест результата с краткими отчетами об изменениях. </div>
                 </div>
@@ -419,9 +425,10 @@
                     <img src="img/premium.png" alt="premium" class="block__image">
                   </div>
                   <span class="block__number"> 4 </span>
+                  <h3 class="block__title d-sm-block"> Премия </h3>
                 </div>
                 <div class="block__body">
-                  <h3 class="block__title"> Премия </h3>
+                  <h3 class="block__title d-sm-none"> Премия </h3>
                   <div class="block__subtitle"> Вознаграждение за результат. </div>
                   <div class="block__descr block__descr_small"> Многие клиенты, благодарят меня после проработок премией за результат, это является добровольным действием. </div>
                 </div>
@@ -431,7 +438,6 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="advantages__bg"></div>
         <div class="advantages__inner inner">
           <h3 class="advantages__title title"> Ощутите <span class="text-green">преимущества </span><br /><span class="text-blue">онлайн-работы</span>
           </h3>
@@ -440,7 +446,7 @@
             <p> Вам не нужно тратить время на поездки в кабинет или испытывать дискомфорт при смене привычной обстановки. Также можно работать в командировке, путешествии. </p>
           </div>
           <div class="advantages__subtitle inner-thin">
-            <div class="text-green text-bold"> Не откладывайте решение важных проблем, когда работу над ними можно начать уже сегодня. Запишитесь на предварительную консультацию. </div>
+            <div class="text-green text text-bold"> Не откладывайте решение важных проблем, когда работу над ними можно начать уже сегодня. Запишитесь на предварительную консультацию. </div>
           </div>
           <div class="advantages__cta">
             <a href="#" class="btn"><span class="btn__inner">Выбрать дату и время предварительной консультации</span>
@@ -451,7 +457,7 @@
       <section class="realistic">
         <div class="realistic__inner inner">
           <h3 class="realistic__title title">
-            <span class="text-thin">Обращаться за помощью к специалисту - </span><span class="text-green">нормально</span>
+            <span class="text-thin">Обращаться за помощью <br>к специалисту - </span><span class="text-green">нормально</span>
           </h3>
           <div class="realistic__descr text">
             <p> Сегодня люди грамотно подходят к решению личностных проблем и прорабатывают их со специалистами, способными оказать реальную помощь. Отлично, что стереотипы о том, что к психологу обращаться стыдно, остались в прошлом. </p>
@@ -460,54 +466,54 @@
           <h5 class="realistic__subtitle title-small"> На моих сеансах <span class="text-black">точно нет:</span>
           </h5>
           <div class="realitic__restrictions row">
-            <div class="col">
+            <div class="col col-sm-12 realistic__restr">
               <div class="feature feature_restriction">
                 <div class="feature__icon">
                   <svg class="icon icon-times">
                     <use xlink:href="img/sprite.svg#icon-times"></use>
                   </svg>
                 </div>
-                <div class="feature__descr"> Медикаментов <br>и БАДов </div>
+                <div class="feature__descr feature__descr_bold"> Медикаментов <br>и БАДов </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col col-sm-12 realistic__restr">
               <div class="feature feature_restriction">
                 <div class="feature__icon">
                   <svg class="icon icon-times">
                     <use xlink:href="img/sprite.svg#icon-times"></use>
                   </svg>
                 </div>
-                <div class="feature__descr"> Гаданий <br>и астрологии </div>
+                <div class="feature__descr feature__descr_bold"> Гаданий <br>и астрологии </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col col-sm-12 realistic__restr">
               <div class="feature feature_restriction">
                 <div class="feature__icon">
                   <svg class="icon icon-times">
                     <use xlink:href="img/sprite.svg#icon-times"></use>
                   </svg>
                 </div>
-                <div class="feature__descr"> Фэн-шуя <br>и эзотерики </div>
+                <div class="feature__descr feature__descr_bold"> Фэн-шуя <br>и эзотерики </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col col-sm-12 realistic__restr">
               <div class="feature feature_restriction">
                 <div class="feature__icon">
                   <svg class="icon icon-times">
                     <use xlink:href="img/sprite.svg#icon-times"></use>
                   </svg>
                 </div>
-                <div class="feature__descr"> Мистики <br>и ритуалов </div>
+                <div class="feature__descr feature__descr_bold"> Мистики <br>и ритуалов </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col col-sm-12 realistic__restr">
               <div class="feature feature_restriction">
                 <div class="feature__icon">
                   <svg class="icon icon-times">
                     <use xlink:href="img/sprite.svg#icon-times"></use>
                   </svg>
                 </div>
-                <div class="feature__descr"> Аффирмаций <br>и прочего <br>шарлатанства </div>
+                <div class="feature__descr feature__descr_bold"> Аффирмаций <br>и прочего <br>шарлатанства </div>
               </div>
             </div>
           </div>
@@ -534,8 +540,8 @@
             <span class="text-thin">моменты<br /> в процессе работы</span>
           </h3>
           <div class="moments__content row">
-            <div class="col-3 col-sm-6">
-              <div class="block">
+            <div class="moments__block col-3 col-sm-12">
+              <div class="block block_moments">
                 <div class="block__header">
                   <div class="block__image-wrapper">
                     <svg class="icon icon-decor">
@@ -543,15 +549,16 @@
                     </svg>
                     <img src="img/time-limitless.png" alt="time-limitless" class="block__image">
                   </div>
+                  <h3 class="block__title d-sm-block"> Без ограничений </br>по времени </h3>
                 </div>
                 <div class="block__body">
-                  <h3 class="block__title"> Без ограничений </br>по времени </h3>
+                  <h3 class="block__title d-sm-none"> Без ограничений </br>по времени </h3>
                   <div class="block__descr block__descr_small"> Сеанс длится столько, сколько необходимо для эффективной проработки. </div>
                 </div>
               </div>
             </div>
-            <div class="col-3 col-sm-6">
-              <div class="block">
+            <div class="moments__block col-3 col-sm-12">
+              <div class="block block_moments">
                 <div class="block__header">
                   <div class="block__image-wrapper">
                     <svg class="icon icon-decor">
@@ -559,15 +566,16 @@
                     </svg>
                     <img src="img/quick-result.png" alt="quick-result" class="block__image">
                   </div>
+                  <h3 class="block__title d-sm-block"> Быстрый </br>и ощутимый </br>результат </h3>
                 </div>
                 <div class="block__body">
-                  <h3 class="block__title"> Быстрый </br>и ощутимый </br>результат </h3>
+                  <h3 class="block__title d-sm-none"> Быстрый </br>и ощутимый </br>результат </h3>
                   <div class="block__descr block__descr_small"> Вам не придется годами ходить к психологу и тратить время на малоэффективные задания. </div>
                 </div>
               </div>
             </div>
-            <div class="col-3 col-sm-6">
-              <div class="block">
+            <div class="moments__block col-3 col-sm-12">
+              <div class="block block_moments">
                 <div class="block__header">
                   <div class="block__image-wrapper">
                     <svg class="icon icon-decor">
@@ -575,15 +583,16 @@
                     </svg>
                     <img src="img/online-consulting.png" alt="online-consulting" class="block__image">
                   </div>
+                  <h3 class="block__title d-sm-block"> Дистанционно </br>по удобному </br>способу связи </h3>
                 </div>
                 <div class="block__body">
-                  <h3 class="block__title"> Дистанционно </br>по удобному </br>способу связи </h3>
+                  <h3 class="block__title d-sm-none"> Дистанционно </br>по удобному </br>способу связи </h3>
                   <div class="block__descr block__descr_small"> Возможны консультации и работа по любому способу связи на ваше усмотрение. </div>
                 </div>
               </div>
             </div>
-            <div class="col-3 col-sm-6">
-              <div class="block">
+            <div class="moments__block col-3 col-sm-12">
+              <div class="block block_moments">
                 <div class="block__header">
                   <div class="block__image-wrapper">
                     <svg class="icon icon-decor">
@@ -591,9 +600,10 @@
                     </svg>
                     <img src="img/openness.png" alt="openness" class="block__image">
                   </div>
+                  <h3 class="block__title d-sm-block"> Открытость </h3>
                 </div>
                 <div class="block__body">
-                  <h3 class="block__title"> Открытость </h3>
+                  <h3 class="block__title d-sm-none"> Открытость </h3>
                   <div class="block__descr block__descr_small"> Я работаю официально и зарегистрирован в качестве ИП - скрывать нечего и незачем. </div>
                 </div>
               </div>
@@ -688,10 +698,10 @@
       <section class="why">
         <div class="why__inner inner">
           <div class="why__content row">
-            <div class="col-4">
+            <div class="col-4 d-xs-none">
               <img src="img/square.png" alt="why">
             </div>
-            <div class="col-8">
+            <div class="col-8 col-xs-12">
               <h3 class="why__title title">
                 <span class="text-thin">Почему работа <br /> с подсознанием <br /></span>
                 <span class="text-bright-green">эффективна?</span>
@@ -717,7 +727,10 @@
             </div>
             <div class="reviews__cta">
               <a href="#" class="btn">
-                <span class="btn__inner"> Выбрать дату и время предварительной консультации </a>
+                <span class="btn__inner"> Выбрать дату и время предварительной консультации</span>
+              </a>
+              <p> У вас может быть результат еще быстрее и ощутимее! <br /> От вас - только желание и доверие. </p>
+              <p class="text-green text-bold"> Запишитесь на первую консультацию и все увидите сами. </p>
             </div>
           </div>
         </div>

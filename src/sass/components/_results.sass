@@ -1,12 +1,26 @@
 .results
   display: flex
   align-items: center
-  height: 59.17vw
+  min-height: 59.17vw
   +cover
   background-image: url(./../img/results-bg.png)
   color: $white
+  +sm
+    min-height: inherit
   &__content
-    width: 50%
+    width: 56%
+    padding-top: 340px
+    padding-bottom: 340px
+    +sm
+      width: 100%
+      padding-top: 150px
+      padding-bottom: 150px
+  &__title
+    margin-bottom: 38px
+  &__descr
+    margin-bottom: 44px
+  &__subtitle
+    margin-bottom: 32px
   &__list
     padding-left: 32px
     & > li

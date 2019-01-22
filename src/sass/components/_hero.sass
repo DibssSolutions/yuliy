@@ -4,16 +4,29 @@
   background-repeat: no-repeat
   background-position: 100% 0
   color: $titleWhite
-  height: 60.57vw
-  min-height: 900px
+  min-height: 60.57vw
   +lg
     background-position: 50% 0
   +sm
     background-position: 60% 0
+    min-height: inherit
+  &__inner
+    position: relative
+  &__square
+    position: absolute
+    top: 5vw
+    transform: translateY(-50%)
+    left: 15px
+    +md
+      display: none
+    img
+      width: 60px
   &__header
     padding-top: 10vw
     margin-bottom: 70px
     width: 58.333%
+    +md
+      margin-bottom: 40px
   &__title
     margin-bottom: 30px
     span
@@ -25,14 +38,21 @@
     p:not(:last-child)
       margin-bottom: 26px
   &__features
-    margin-bottom: 45px
+    margin-bottom: 40px
+    .feature
+      +sm
+        margin-bottom: 10px
   &__cta
+    padding-bottom: 280px
     text-align: center
+    +md
+      padding-bottom: 140px
 
 .feature
   text-align: center
   +sm
     display: flex
+    text-align: left
   +hover
     .feature__icon:before
       transform: scaleX(2)
@@ -52,10 +72,10 @@
       width: 40px
       height: 40px
     +sm
-      margin-bottom: 10px
-    +sm
-      width: auto
+      margin-bottom: 0
+      +flex-size(14px)
       height: auto
+      transform: none
     &:before,&:after
       content: ' '
       position: absolute
@@ -78,12 +98,14 @@
       border-right-style: solid
     [class*='icon-']
       transform: rotate(-45deg)
+      +sm
+        transform: none
     .icon-check
       color: $mainGreen
       font-size: 1.125em
     .icon-times
       color: $coral
-      font-size: 1em
+      font-size: 1.25em
   &__descr
     font-family: Montserrat
     font-size: 1.125em
@@ -93,3 +115,7 @@
       padding-left: 10px
       br
         display: none
+    &_bold
+      font-family: $museo
+      text-transform: uppercase
+      font-weight: 900

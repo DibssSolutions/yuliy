@@ -1,25 +1,31 @@
 .about
-  margin-top: -30px
-  height: 70vw
-  min-height: 900px
+  min-height: 70vw
   +cover
   background-image: url(./../img/about-bg.png)
   display: flex
   align-items: center
   +sm
     background-position: 100% 0
+    height: auto
+    min-height: inherit
   &__content
     width: 66.666%
     margin-left: 33.333%
+    padding: 240px 20px 240px 0
     font-weight: 300
     line-height: 1.75
     color: $white
+    hyphens: none
     +sm
       width: 100%
       margin-left: 0
+      padding: 150px 0
+    & > p:not(:last-child)
+      margin-bottom: 27px
+    .blockquote
+      margin-bottom: 36px
     .blockquote,
     & > p
-      margin-bottom: 36px
       +lg
         margin-bottom: 24px
       +md
@@ -27,8 +33,9 @@
   &__certificates
     display: flex
     align-items: center
+    margin-top: 44px
     +sm
       display: none
   &__certificate
     &:not(:last-child)
-      margin-right: 12px
+      margin-right: 24px

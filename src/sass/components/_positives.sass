@@ -1,12 +1,30 @@
 .positives
-  height: 68.75vw
+  min-height: 68.75vw
   display: flex
   align-items: center
   +cover
   background-image: url(./../img/promises.png)
   color: $white
   text-align: center
+  +lg
+    min-height: inherit
+  +sm
+    text-align: left
+  &__inner
+    padding-top: 300px
+    padding-bottom: 300px
+    +md
+      padding-top: 180px
+      padding-bottom: 180px
+  &__title
+    margin-bottom: 30px
+    +sm
+      margin-bottom: 20px
   &__descr
+    margin-bottom: 54px
     font-size: 20px
     font-weight: 300
     line-height: 1.4
+    +sm 
+      font-size: 16px
+      margin-bottom: 24px

@@ -13,28 +13,32 @@
           image: 'time-limitless',
           title: 'Без ограничений </br>по времени',
           descr: "Сеанс длится столько, сколько необходимо для эффективной проработки.",
-          descrSmall: true
+          descrSmall: true,
+          moments: true
         },
         {
           image: 'quick-result',
           title: 'Быстрый </br>и ощутимый </br>результат',
           descr: "Вам не придется годами ходить к психологу и тратить время на малоэффективные задания.",
-          descrSmall: true
+          descrSmall: true,
+          moments: true
         },
         {
           image: 'online-consulting',
           title: 'Дистанционно </br>по удобному </br>способу связи',
           descr: "Возможны консультации и работа по любому способу связи на ваше усмотрение.",
-          descrSmall: true
+          descrSmall: true,
+          moments: true
         },
         {
           image: 'openness',
           title: 'Открытость',
           descr: "Я работаю официально и зарегистрирован в качестве ИП - скрывать нечего и незачем.",
-          descrSmall: true
+          descrSmall: true,
+          moments: true
         }
       ] %}
-        <div class="col-3 col-sm-6">
+        <div class="moments__block col-3 col-sm-12">
             {{ mixins.block(moment) }}
         </div>
       {% endfor %}

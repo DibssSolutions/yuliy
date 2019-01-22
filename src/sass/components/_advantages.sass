@@ -1,21 +1,43 @@
 .advantages
   color: $white
   +flex-center
-  height: 62vw
+  margin-top: -50px
+  // height: 62vw
   min-height: 700px
   position: relative
   background-image: url(./../img/advantages.png)
   +cover
+  +sm
+    height: auto
   // &__bg
   //   +coverdiv
     // background-image: url(./../img/benefits.png)
     // filter: url(#blur)
   &__inner
     position: relative
+    padding-top: 263px
+    padding-bottom: 263px
     z-index: 2
+    +sm
+      padding-top: 150px
+      padding-bottom: 150px
   &__title
     text-align: center
+    margin-bottom: 40px
+    +sm
+      margin-bottom: 20px
+      text-align: left
+  &__descr
+    margin-bottom: 34px
+    +sm
+      margin-bottom: 20px
+    p:not(:last-child)
+      margin-bottom: 27px
+      +sm
+        margin-bottom: 16px
   &__subtitle
-
+    margin-bottom: 50px
+    +sm
+      margin-bottom: 32px
   &__cta
     text-align: center

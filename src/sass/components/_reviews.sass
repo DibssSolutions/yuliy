@@ -1,9 +1,42 @@
 .reviews
-  height: 52vw
+  margin-top: -40px
+  min-height: 52vw
+  color: $white
   +cover
   background-image: url(./../img/reviews.png)
+  // +sm
+  //   background-position: 50% 0
   &__content
     width: 58.333%
-    padding-right: 15px
-    padding-top: 40%
+    padding-top: 330px
+    padding-bottom: 30px
     color: $white
+    +sm
+      padding-top: 200px
+    +xs
+      width: 100%
+  &__title
+    margin-bottom: 38px
+    +sm
+      margin-bottom: $titleSmMargin
+  &__descr
+    padding-right: 50px
+    font-size: 1em
+    font-weight: 300
+    line-height: 1.65
+    margin-bottom: 40px
+    +sm
+      margin-bottom: $titleSmMargin
+      padding-right: 0
+    p:not(:last-child)
+      margin-bottom: 28px
+      +sm
+        margin-bottom: 12px
+  &__cta
+    font-size: 1.25em
+    font-weight: 300
+    line-height: 1.4
+    .btn
+      margin-bottom: 40px
+      +sm
+        margin-bottom: $titleSmMargin

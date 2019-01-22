@@ -1,31 +1,50 @@
 .book-section
-  margin-bottom: 100px
+  margin-bottom: 144px
+  +md
+    margin-bottom: 120px
+  +sm
+    margin-bottom: 40px
   &__image
     position: relative
+    text-align: center
     overflow: visible
+    +sm
+      padding-top: 40px
+      padding-bottom: 40px
     svg
       height: 0
       width: 0
     img
+      display: inline-block
       filter: url(#dropshadow)
-      transform: rotate(-7deg)
-      transform-origin: 0 0
+      transform: rotate(-8.5deg)
+      +xs
+        max-width: 80%
+      // transform-origin: 100% 0
       // filter: url(#displacement)
+      // +sm
+      //   transform-origin: 0 0
   &__image-shadow
     background-color: green
     border-radius: 8px
     +coverdiv
     // filter: url(#dropshadow)
   &__descr
+    max-width: 540px
+    margin-bottom: 40px
+    +lg
+      margin-bottom: 20px
     // filter: url(#water-color)
     // filter: url(#dropshadow)
   &__title
+    margin-bottom: 34px
+    +lg
+      margin-bottom: 20px
     // filter: url(#displacement)
     // filter: url(#turbulense)
     // filter: url(#ripple-filter)
     +sm
       display: none
   &__cta
-    .btn
-      +sm
-        width: 100%
+    +sm
+      text-align: center

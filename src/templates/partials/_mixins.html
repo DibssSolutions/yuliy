@@ -40,14 +40,14 @@
         {{ icon('times') }}
       {% endif %}
     </div>
-    <div class="feature__descr">
+    <div class="feature__descr{% if item.not %} feature__descr_bold{% endif %}">
       {{ item.text | safe }}
     </div>
   </div>
 {% endmacro %}
 
 {% macro block(props) %}
-  <div class="block">
+  <div class="block{% if props.moments %} block_moments{% endif %}">
     <div class="block__header">
       <div class="block__image-wrapper">
         {{ icon('decor') }}
@@ -72,10 +72,15 @@
           {{ props.titleTop | safe }}
         </h3>
       {% endif %}
+      {% if props.title %}
+        <h3 class="block__title d-sm-block">
+          {{ props.title | safe }}
+        </h3>
+      {% endif %}
     </div>
     <div class="block__body">
       {% if props.title %}
-        <h3 class="block__title">
+        <h3 class="block__title d-sm-none">
           {{ props.title | safe }}
         </h3>
       {% endif %}

@@ -1,7 +1,7 @@
 <section class="realistic">
   <div class="realistic__inner inner">
     <h3 class="realistic__title title">
-      <span class="text-thin">Обращаться за помощью к специалисту - </span
+      <span class="text-thin">Обращаться за помощью <br>к специалисту - </span
       ><span class="text-green">нормально</span>
     </h3>
     <div class="realistic__descr text">
@@ -27,7 +27,7 @@
         'Мистики <br>и ритуалов',
         'Аффирмаций <br>и прочего <br>шарлатанства'
       ] %}
-        <div class="col">
+        <div class="col col-sm-12 realistic__restr">
           {{ mixins.feature({ text: item, not: true }) }}
         </div>
       {% endfor %}

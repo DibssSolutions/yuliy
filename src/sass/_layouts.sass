@@ -17,7 +17,7 @@ $padding: 15px
   display: flex
   flex-wrap: wrap
 
-[class*='col-']
+[class*='col']
   padding: 0 $padding
 
 .col
@@ -25,3 +25,15 @@ $padding: 15px
 
 +generate_grid(12)
 
+.d-sm-block
+  display: none
+  +sm
+    display: initial
+
+.d-sm-none
+  +sm
+    display: none
+
+.d-xs-none
+  +xs
+    display: none

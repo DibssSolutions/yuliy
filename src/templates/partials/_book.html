@@ -1,7 +1,7 @@
 <section class="book-section">
   <div class="book-section__inner inner">
     <div class="book-section__row row">
-      <div class="book-section__image col-5 col-sm-12">
+      <div class="book-section__image col-5 col-md-6 col-sm-12">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -19,7 +19,7 @@
               rimitiveUnits="userSpaceOnUse"
               color-interpolation-filters="linearRGB"
             >
-              <feOffset dx="10" dy="10" in="SourceAlpha" result="offset" />
+              <feOffset dx="5" dy="15" in="SourceAlpha" result="offset" />
               <feGaussianBlur stdDeviation="5 5" in="offset" result="blur" />
               <feFlood flood-color="#000" flood-opacity="0.91" result="flood" />
               <feComposite
@@ -126,7 +126,7 @@
         <img src="./img/book.jpg" alt="book.jpg" />
         <!-- <div class="book-section__image-shadow"></div> -->
       </div>
-      <div class="book-section__text col-7 col-sm-12">
+      <div class="book-section__text col-7 col-md-6 col-sm-12">
         <h2 class="book-section__title title-big">
           <span class="text-black text-green text-row">Книга </span
           ><span class="text-row text-thin">обо всем</span>
@@ -136,7 +136,7 @@
           вам получить совершенно <span class="text-bold">бесплатно.</span>
         </div>
         <div class="book-section__cta">
-          <a href="#" class="btn">
+          <a href="#" class="btn btn_small">
             <span class="btn__inner">
               <span class="btn__icon"> {{ mixins.icon("download") }} </span>
               Скачать книгу (PDF)

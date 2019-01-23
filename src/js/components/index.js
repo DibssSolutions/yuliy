@@ -1,1 +1,1 @@
-// import './_animation';
+import './_initFancyBox';
